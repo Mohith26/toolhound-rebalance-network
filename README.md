@@ -36,7 +36,8 @@ Rolling backtest (weekly cutoffs from week 30 to 48, 3,040 part-location windows
 ## Novelty / prior art
 
 - ToolHound's Min/Max, EOQ-based Calculate Min/Max and Reorder Worksheet are per-location; transfer requests are manual.
-- Multi-echelon inventory optimization and lateral transshipment are classic operations research (e.g., lateral transshipment models since the 1980s) and exist in big ERP/supply-chain suites (SAP IBP, Kinaxis), not in tool-crib software for contractors. Tool-tracking competitors (e.g., ShareMyToolbox, Align, Tooltribe, ToolWatch) report utilization and locations; I found no public feature that plans transfers vs buys with a calibrated service level.
+- Multi-echelon inventory optimization and lateral transshipment are classic operations research and exist in large supply-chain suites (SAP IBP, Kinaxis), not in tool-crib software for contractors.
+- Closest competitor messaging: **Tenna** says its utilization data supports "better buy-move-or-rent decisions" and lets contractors schedule assets across sites; **ToolWatch (Align)** and **ShareMyToolbox** offer fast transfers, pick tickets and multi-site visibility. None of their public pages describe computing a calibrated per-location requirement and an optimal transfer/buy/rent plan; the decision is left to the user.
 - Conformal prediction for inventory requirements is recent research; using a per-part split-conformal margin to set service-level stock in a shipping product is the new part.
 
 ## Tests
