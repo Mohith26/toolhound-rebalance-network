@@ -1,0 +1,157 @@
+{
+  "seed": 20261111,
+  "now": 52,
+  "horizon": 4,
+  "alpha": 0.05,
+  "rates": {
+    "handling": 45,
+    "perKm": 0.22,
+    "buyShip": 60,
+    "rentDelivery": 120
+  },
+  "rentWeeks": 10,
+  "conformal": {
+    "qByPart": {
+      "2DA1SA": 2.3294,
+      "TW-34-600": 2.0648,
+      "HTW-5MXT": 1.7665,
+      "GD-4GAS": 2.6028,
+      "MD-CS-2": 2.4575,
+      "RH-SDSMAX": 2.0133,
+      "IMP-M18-1": 2.2395,
+      "WLD-BC260": 1.8205,
+      "BS-PORT-5": 2.3041,
+      "PT-300": 1.9176,
+      "LL-ROT-2": 1.548,
+      "GEN-7K": 1.5773,
+      "HTR-400K": 1.7378,
+      "PMP-3TR": 1.6154,
+      "CH-2T-20": 2.3429,
+      "LCH-3T": 2.141,
+      "GR-7-DW": 2.1767,
+      "FAH-FULL": 2.5055,
+      "MW-SCOPE": 2.0141,
+      "BT-BOLTTEN": 1.5932
+    },
+    "nCal": 5920
+  },
+  "coverage": {
+    "overall": 0.9849,
+    "n": 3040,
+    "byCutoff": [
+      {
+        "week": 30,
+        "coverage": 0.975
+      },
+      {
+        "week": 31,
+        "coverage": 0.9938
+      },
+      {
+        "week": 32,
+        "coverage": 0.9875
+      },
+      {
+        "week": 33,
+        "coverage": 0.975
+      },
+      {
+        "week": 34,
+        "coverage": 0.975
+      },
+      {
+        "week": 35,
+        "coverage": 0.9688
+      },
+      {
+        "week": 36,
+        "coverage": 0.9813
+      },
+      {
+        "week": 37,
+        "coverage": 0.9813
+      },
+      {
+        "week": 38,
+        "coverage": 0.9813
+      },
+      {
+        "week": 39,
+        "coverage": 0.9938
+      },
+      {
+        "week": 40,
+        "coverage": 0.9875
+      },
+      {
+        "week": 41,
+        "coverage": 0.9875
+      },
+      {
+        "week": 42,
+        "coverage": 0.9938
+      },
+      {
+        "week": 43,
+        "coverage": 0.9875
+      },
+      {
+        "week": 44,
+        "coverage": 0.9938
+      },
+      {
+        "week": 45,
+        "coverage": 0.9938
+      },
+      {
+        "week": 46,
+        "coverage": 0.9875
+      },
+      {
+        "week": 47,
+        "coverage": 0.9875
+      },
+      {
+        "week": 48,
+        "coverage": 0.9813
+      }
+    ]
+  },
+  "totals": {
+    "optimal": 164545.76,
+    "perSite": 346490,
+    "mainFirst": 257741.5
+  },
+  "moves": {
+    "optimal": {
+      "transfer": 105,
+      "buy": 17,
+      "rent": 139
+    },
+    "perSite": {
+      "transfer": 0,
+      "buy": 29,
+      "rent": 232
+    },
+    "mainFirst": {
+      "transfer": 39,
+      "buy": 26,
+      "rent": 196
+    }
+  },
+  "purchases": {
+    "optimal": 5950,
+    "perSite": 10150,
+    "mainFirst": 9100
+  },
+  "deficitUnits": 261,
+  "headline": {
+    "savingsVsPerSitePct": 52.5,
+    "savingsVsMainFirstPct": 36.2,
+    "optimalCost": 164546,
+    "perSiteCost": 346490,
+    "mainFirstCost": 257742,
+    "coveragePct": 98.5,
+    "unitsTransferred": 105
+  }
+}

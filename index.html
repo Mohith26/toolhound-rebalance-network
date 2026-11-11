@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rebalance Network · Purchasing · ToolHound 6</title>
+<meta name="description" content="Unofficial concept: rebalance tools across stocking locations before buying, for ToolHound 6 (a Beacon company)." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <button class="burger" aria-label="Menu"><i data-lucide="menu"></i></button>
+  <a href="#/purchasing/rebalance" class="logo" aria-label="ToolHound home"><img src="assets/toolhound-logo-white.png" alt="ToolHound" height="34" /></a>
+  <div class="top-right">
+    <label class="sp">Stocking Point <select id="spSel" aria-label="Stocking point"><option>All Stocking Locations</option></select></label>
+    <button class="tb" id="helpBtn" title="Keyboard shortcuts" aria-label="Keyboard shortcuts"><i data-lucide="circle-help"></i></button>
+    <span class="user"><i data-lucide="user-round"></i>iwilson</span>
+  </div>
+</header>
+<div class="shell">
+  <aside class="menu" aria-label="Main menu">
+    <div class="m-sec"><i data-lucide="arrow-left-right"></i>Transactions</div>
+    <div class="m-sec"><i data-lucide="package"></i>Inventory</div>
+    <div class="m-sec open"><i data-lucide="shopping-cart"></i>Purchasing</div>
+    <nav class="m-sub">
+      <a href="#/purchasing/po">Purchase Orders</a>
+      <a href="#/purchasing/req">Purchase Requisitions</a>
+      <a href="#/purchasing/reorder">Reorder Worksheet</a>
+      <a href="#/purchasing/rebalance" data-nav="rebalance">Rebalance Network <span class="new">NEW</span></a>
+      <a href="#/purchasing/transfers" data-nav="transfers">Transfer Requests</a>
+      <a href="#/purchasing/receiving">Receiving</a>
+    </nav>
+    <div class="m-sec"><i data-lucide="wrench"></i>Service</div>
+    <div class="m-sec"><i data-lucide="receipt"></i>Transaction Rentals</div>
+    <div class="m-sec"><i data-lucide="building-2"></i>Internal Billing</div>
+    <div class="m-sec"><i data-lucide="map-pin"></i>Locations</div>
+    <div class="m-sec"><i data-lucide="users"></i>Personnel</div>
+    <div class="m-sec"><i data-lucide="file-bar-chart"></i>Reporting</div>
+    <div class="m-sec"><i data-lucide="settings-2"></i>Utilities</div>
+  </aside>
+  <main class="content" id="view" aria-live="polite">
+    <div class="win"><div class="win-h">Loading…</div><div class="pad"><div class="sk"></div><div class="sk"></div><div class="sk tall"></div></div></div>
+  </main>
+</div>
+<footer class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with ToolHound or Beacon. Synthetic data; locations are real Alberta towns. <a href="https://github.com/Mohith26/toolhound-rebalance-network">Source</a></footer>
+<div class="toast" id="toast" role="status"></div>
+<dialog id="procDlg" aria-labelledby="procTitle"><form method="dialog">
+  <div class="dlg-h" id="procTitle">Process Rebalance Plan</div>
+  <div class="dlg-b" id="procBody"></div>
+  <div class="dlg-f"><button class="btn" value="cancel">Cancel</button><button class="btn primary" value="ok">Process</button></div>
+</form></dialog>
+<dialog id="keysDlg" aria-labelledby="keysTitle"><form method="dialog">
+  <div class="dlg-h" id="keysTitle">Keyboard shortcuts</div>
+  <div class="dlg-b"><table class="keys">
+    <tr><td><kbd>1</kbd>–<kbd>4</kbd></td><td>Summary · Transfers &amp; Orders · By Location · Backtest</td></tr>
+    <tr><td><kbd>/</kbd></td><td>Filter part numbers</td></tr>
+    <tr><td><kbd>P</kbd></td><td>Process plan</td></tr>
+    <tr><td><kbd>E</kbd></td><td>Export plan to Excel (CSV)</td></tr>
+    <tr><td><kbd>Esc</kbd></td><td>Back to the plan</td></tr>
+  </table></div>
+  <div class="dlg-f"><button class="btn primary" value="ok">Close</button></div>
+</form></dialog>
+<script type="module" src="app.js"></script>
+</body>
+</html>
